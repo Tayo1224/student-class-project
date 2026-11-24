@@ -1,0 +1,19 @@
+#ifndef STUDENTMANAGER_H
+#define STUDENTMANAGER_H
+
+#include "Student.h"
+#include <vector>
+#include <string>
+
+class StudentManager {
+private:
+    vector<Student> students;
+
+public:
+    bool isIDUnique(int id) const;
+    bool isEmailUnique(const string& email) const;
+
+    bool addStudent(const Student& student);
+};
+
+#endif
