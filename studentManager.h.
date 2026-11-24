@@ -7,11 +7,11 @@
 
 class StudentManager {
 private:
-    vector<Student> students;
+    std::vector<Student> students;
 
 public:
     bool isIDUnique(int id) const;
-    bool isEmailUnique(const string& email) const;
+    bool isEmailUnique(const std::string& email) const;
 
     bool addStudent(const Student& student);
 };
